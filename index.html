@@ -9,7 +9,7 @@
   <meta name="author" content="BigBear Estúdios - Desenvolvimento Freelancer">
 
   <link rel="shortcut icon" href="img/favicon.ico">
-  <title>Quem Bindera </title>
+  <title>Quem Bindera - Estamos em pausa</title>
 
   <script>
     function isScrolledIntoView(el) {
@@ -107,9 +107,9 @@
           style="color: white;max-width: 500px;font-weight: 600;font-size: medium; padding-left: 10px; text-shadow: 0px 0px 40px black; text-align: justify">
           <br>
           Conectamos pessoas que precisam de binders a quem pode doá-los, ajudando a melhorar a qualidade de vida de
-          pessoas transmasculinas (homens trans e pessoas não-binárias).
+          pessoas transmasculinas (homens trans e pessoas não-binárias). 
           <br><br>
-         
+          Estamos em pausa e o formulário está fechado.
         </p>
 
         <ul class="list-inline list-social-icons mb-0">
@@ -201,7 +201,7 @@
             <div class="resume-content mr-auto">
               <h4 class="mb-3">Como ajudar?</h4>
               <p class="p-sobre">O projeto atua conectando pessoas que desejam fazer uma doação a alguém que precisa de
-                um binder mas não pode comprá-lo. Um binder custa 28 reais mais o frete.
+                um binder mas não pode comprá-lo. Um binder custa 30 reais mais o frete.
                 Algumas vezes o valor final acaba sendo bem caro, chegando a mais que o triplo do valor do produto (por
                 causa do frete), e é necessário um gasto maior. Mesmo quando isso ocorre, não deixamos de doar; o binder
                 é a opção mais segura para comprimir os seios, e é importante que chegue às pessoas que precisam, não
@@ -232,17 +232,17 @@
         <div class="col-sm-12 col-md-12">
           <div class="card mx-0 p-4 mb-5" style="border-color: #f9c7d1; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
             <p class="apadrinhe-subtitulo">Contribuindo com dinheiro</p>
-            <p class="p-sobre">O valor de um binder é de 28 reais mais 25 reais (em média) de frete. Você pode
+            <p class="p-sobre">O valor de um binder é de 30 reais mais 25 reais (em média) de frete. Você pode
               contribuir com o preço do binder, o preço dos dois ou até qualquer valor; cada real ajuda bastante e pode
               tornar possível o sonho do binder para uma pessoa trans. Todas as pessoas serão contempladas em ordem de
               inscrição, independente do valor do frete para o envio, desde que haja dinheiro em caixa para efetuar a
-              doação. Você pode doar utilizando os dados abaixo:
+              doação. <br> <br> No momento não estamos recebendo doações! Estamos em pausa e o formulário está fechado.
               <br><br>
 
 
               <br></p>
 
-            <div class="row justify-content-center">
+            <!-- <div class="row justify-content-center">
              
               <div class="col-sm-12 col-md-4" align="center">
 
@@ -279,7 +279,7 @@
                   e-mail <a href="mailto:quembindera@gmail.com" class="">quembindera@gmail.com</a> e em breve você saberá quem
                     ajudou!
               </div>
-            </div>
+            </div> -->
           </div>
 
 
@@ -311,7 +311,7 @@
     <!--====================================================
                            AWARDS
     ======================================================-->
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+   <!--  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
       <div class="row my-auto">
         <div class="col-12">
           <h2 class="  text-center">RECEBA UM BINDER</h2>
@@ -328,7 +328,7 @@
 
           </div>
         </div>
-    </section>
+    </section> -->
 
     <!--====================================================
                           CONTACT
@@ -341,6 +341,7 @@
             <h3>ENTRE EM CONTATO</h3>
             <div class="heading-border-light"></div>
             <p>Estamos a disposição pra tirar suas dúvidas sobre qualquer coisa relacionada ao projeto.</p>
+            <p>Estamos em pausa e o formulário está fechado!</p>
           </div>
 
           <form action="https://formspree.io/quembindera@gmail.com" method="POST" />
@@ -383,6 +384,25 @@
   </div>
 
 
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Estamos em pausa!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Estamos em pausa e o formulário está fechado!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">OK!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- Global javascript -->
   <script src="js/jquery/jquery.min.js"></script>
@@ -400,6 +420,12 @@
       perturbance: 0.04,
     });
 
+  </script>
+
+  <script type="text/javascript">
+    $(window).on('load', function() {
+        $('#myModal').modal('show');
+    });
   </script>
 
 
